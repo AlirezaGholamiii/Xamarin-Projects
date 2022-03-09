@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{6934FEA7-55D6-44B9-BF78-603125B0C20E}|Default">
+  <MonoDevelop.Ide.ItemProperties.SecondProject.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.650F9E32-796C-409D-807E-25E26077BFCF" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecondProject/SecondProject/CarouselPage.xaml">
+    <Files>
+      <File FileName="SecondProject/SecondProject/CarouselPage.xaml" Line="15" Column="14" />
+      <File FileName="SecondProject/SecondProject/CarouselPage.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SecondProject" expanded="True" selected="True">
+            <Node name="SecondProject" expanded="True" />
+            <Node name="SecondProject.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SecondProject.Android PreferredExecutionTarget="Android.pixel_2_nougat_7_1_-_api_25" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios = "clr-namespace:Xamarin.Forms.PlatformConfiguration;assembly=Xamarin.Forms.Core"
+             x:Class="SecondProject.CarouselPage">
+    <CarouselView x:Name="carousel" CurrentItemChanged="carousel_CurrentItemChanged">
+        <CarouselView.ItemsLayout>
+            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="1"/>
+        </CarouselView.ItemsLayout>
+
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame HasShadow="True" BorderColor="DarkGray" CornerRadius="5" Margin="20,50" HeightRequest="200"
+                           HorizontalOptions="Center" VerticalOptions="Start">
+                        <StackLayout>
+                            <Label Text="{Binding Title}" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Image Source="{Binding Photo}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center"/>
+                            <Label Text="{Binding Description}" HorizontalOptions="Center"/>                  
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="False" BackgroundColor="White" VerticalOptions="Center">
+                        <SearchBar x:Name="searchBarComments"
+                                       Placeholder="Search for a comment..."
+                                       PlaceholderColor="Gray"
+                                       TextColor="Black"
+                                       TextChanged="searchBarComment_TextChanged"/>
+                    </Frame>
+
+                    <Frame HasShadow="False" BackgroundColor="White"
+                           VerticalOptions="Start" Margin="10,10" HeightRequest="200">
+                        <ListView x:Name="commentsList" 
+                                        BackgroundColor="White"/>
+                    </Frame>
+                </StackLayout>
+
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+
+</ContentPage>

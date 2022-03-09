@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SecondProject.ToolsPage2">
+
+    <StackLayout Margin="10">
+        <Label Text="Select date" Margin="0,20" HorizontalTextAlignment="Center"/>
+        <Label Text="Start date"/>
+        <DatePicker x:Name="startDatePicker" Format="D" Margin="30,0,0,30"
+                    MinimumDate="01/01/2018" MaximumDate="12/31/2018"/>
+
+        <Label Text="End date"/>
+        <DatePicker x:Name="endDatePicker" DateSelected="endDatePicker_DateSelected"
+                    MinimumDate="12/31/2018" Format="D"
+                    Margin="30,0,0,30"/>
+
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,30">
+            <Label Text="Toggle" VerticalOptions="Center"/>
+            <Switch x:Name="switch" IsToggled="True" OnColor="Orange"
+                    ThumbColor="Green" Toggled="switch1_Toggled"/>
+        </StackLayout>
+
+        <Label x:Name="rotateLabel" Text="rotating text" FontSize="Large"
+               HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+        <Stepper Maximum="360" Increment="30" ValueChanged="Stepper_ValueChanged"
+                 HorizontalOptions="Center"/>
+
+        <Label x:Name="displayLabel" HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
